@@ -1,0 +1,28 @@
+{
+  "name": "ignis",
+  "version": "1.0.0",
+  "description": "IGNIS Construction and Engineering Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Console45/IGNIS-Construction.git"
+  },
+  "keywords": [
+    "IGNiS",
+    "Construction",
+    "Engineering"
+  ],
+  "author": "AFROHEADS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Console45/IGNIS-Construction/issues"
+  },
+  "homepage": "https://github.com/Console45/IGNIS-Construction#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "fontawesome": "^5.6.3"
+  }
+}
