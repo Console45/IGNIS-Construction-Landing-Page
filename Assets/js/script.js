@@ -38,5 +38,3 @@ $('#readmore').on('click', () => {
 		$('#about-res').addClass('a-hidden');
 	}
 });
-
-AOS.init();
