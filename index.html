@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="./Assets/lib/cssanimation.min.css">
         <!-- Aos -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Toast -->
+        <link rel="stylesheet" href="./node_modules/jquery-toast-plugin/dist/jquery.toast.min.css">
     </head>
     <body>
         <!-- NavBar -->
@@ -31,7 +33,7 @@
                 <div class="row " >
                     <div class="col-md-12" >
                         <nav  class="navbar navbar-light navbar-expand-lg  mx-lg-5  py-lg-0" >
-                            <a   class="navbar-brand mx-lg-4 pb-lg-3 cssanimation fadeInLeft" href="#">
+                            <a   class="navbar-brand mx-lg-4 pt-lg-1 cssanimation fadeInLeft" href="./index.html">
                                 <img src="./images/logo.png" style="width: 150px; margin-top: -20px;" alt=""> </a>
                             <button style="margin-top: -20px;" class="navbar-toggler cssanimation fadeInRight" type="button" data-toggle="collapse" data-target="#navbar"
                                 aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
@@ -156,7 +158,7 @@
                     </div>
                     <div  class="d-none d-lg-block" style="margin-top: 250px;">
                         <h3 style="margin-bottom: 30px; font-weight: 900;">See All of <br> Our Service</h3>
-                        <a id="readmore" href="#">Here <i id="read-i" class="fas fa-arrow-right"></i></a>
+                        <a id="readmore" href="./service.html">Here <i id="read-i" class="fas fa-arrow-right"></i></a>
                     </div>
             
                 </div>
@@ -169,7 +171,7 @@
                 </div>
                 <div id="service-p" class="d-block d-lg-none">
                     <h3 style="margin-bottom: 30px; font-weight: 900;">See All of <br> Our Service</h3>
-                    <a id="readmore" href="#">Here <i id="read-i" class="fas fa-arrow-right"></i></a>
+                    <a id="readmore" href="./service.html">Here <i id="read-i" class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -348,8 +350,8 @@
                         <p style="margin-top: 20px;">
                             Hse. No. 25 Batsonaa Central, Off Spintex Rd, Community 17 – Tema
                         </p>
-                        <p style="margin-top: 30px;">
-                           <span style="font-weight: 700;">Email:</span><span><a href="mailto:agyeiterry@gmail.com" style="color: #935c00;"> agyeiterry@gmail.com</a></span>
+                        <p style="margin-top: 30px;" >
+                           <span style="font-weight: 700;">Email:</span> <br><span><a href="mailto:info@ignisconstructions.com" style="color: #935c00;">info@ignisconstructions.com</a></span>
                         </p>
                         <div id="c-icons-div" style="font-size: 30px; ">
                             <div id="c-icons">
@@ -404,9 +406,10 @@
                                 Subscribe to our newsletter and <br> we will inform you about newest projects <br> and promotions
                             </p>
                             <div style="margin-top: 50px;">
-                                <form action="#" method="POST">
+                            
+                                <form  id="news-letter" action="#">
                                     <input id="email" type="email" name="email" placeholder="Email Address...">
-                                     <button style="background: #333;border: none; color: white; margin-left: -55px;"> <i class="fas fa-arrow-right"></i></button>
+                                     <button id="form-btn" style="background: #333;border: none; color: white; margin-left: -55px;"> <i class="fas fa-arrow-right"></i></button>
                                 </form>
                             </div>
 
@@ -441,7 +444,8 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/1911436ffb.js" crossorigin="anonymous"></script>
-      
+        <script src="./node_modules/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+        <script src="./Assets/lib/bootstrap-notify.js"></script>     
         <script src="./Assets/js/script.js"></script>
            
     

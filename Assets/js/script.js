@@ -38,3 +38,33 @@ $('#readmore').on('click', () => {
 		$('#about-res').addClass('a-hidden');
 	}
 });
+
+// Form  Validation
+let $form = $('#news-letter');
+$form.on('submit', (e) => {
+	if ($('#email').val() == '') {
+		e.preventDefault();
+	} else {
+		$.notify(
+			{
+				// options
+				icon: 'far fa-check-circle',
+				message: 'Subscription <strong>Successful</strong>'
+			},
+			{
+				// settings
+				element: 'body',
+				type: 'info',
+				allow_dismiss: true,
+				type: 'success',
+				offset: {
+					y: 150
+				},
+
+				placement: {
+					align: 'center'
+				}
+			}
+		);
+	}
+});
