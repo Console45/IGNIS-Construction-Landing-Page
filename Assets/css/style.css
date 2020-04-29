@@ -7,6 +7,7 @@ body {
 	background: white;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 2px;
+	overflow-x: hidden;
 }
 h1 {
 	font-weight: 900;
@@ -643,7 +644,7 @@ header {
 	margin-top: 100px;
 }
 #clients-cap-3 {
-	margin-left: -130px;
+	margin-left: -120px;
 	margin-top: 100px;
 }
 #clients-cap-4 {
@@ -668,11 +669,12 @@ header {
 }
 @media screen and (max-width: 500px) {
 	#clients-cap-1 {
-		margin-left: -100px;
+		margin-left: -80px;
 		margin-top: 100px;
+		width: 200px;
 	}
 	#clients-cap-4 {
-		margin-left: -100px;
+		margin-left: -80px;
 		margin-top: 100px;
 	}
 }

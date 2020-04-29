@@ -10,8 +10,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>IGNIS CONSTRUCTION AND ENGINEERING</title>
-    <meta name="description" content="">
+    <meta name="description" content="IGNIS Engineering and Constructions. >Provision of Affordable Construction & Engineering
+                            Solutions to Everyone">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="images/logo.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -54,7 +56,7 @@
             <div class="row ">
                 <div class="col-md-12">
                     <nav class="navbar navbar-light mx-lg-5  py-lg-0">
-                        <a class="navbar-brand mx-lg-4 pt-lg-1 cssanimation fadeInLeft" href="#">
+                        <a class="navbar-brand mx-lg-4 pt-lg-1 cssanimation fadeInLeft" href="./index.php">
                             <img src="./images/logo.png" style="width: 180px; margin-top: -20px;" alt=""> </a>
                         
                     </nav>
@@ -74,7 +76,7 @@
 
             </div>
             <div style="margin-top: 200px;">
-                <p><span><a id="home-l" href="./index.html">HOME</a></span> <span> <i class="fas fa-chevron-right"></i> </span> SERVICES</p>
+                <p><span><a id="home-l" href="./index.php">HOME</a></span> <span> <i class="fas fa-chevron-right"></i> </span> SERVICES</p>
             </div>
 
         </div>
@@ -155,22 +157,25 @@
                 </h2>
             </div>
         </div>
-
+    
         <div class="container">
             <div id="contact-content">
                 <div class="row">
                     <div id="contact-div-1" class="col-12 col-lg-6">
                         <h3 style="font-weight: 700;">
                             Greater Accra,<span style="color: #935C00;font-weight: 400;"> Ghana</span>
-
+    
                         </h3>
                         <p style="margin-top: 20px;">
                             Hse. No. 25 Batsonaa Central, Off Spintex Rd, Community 17 – Tema
                         </p>
                         <p style="margin-top: 30px;">
-                            <span style="font-weight: 700;">Email:</span><span><a
+                            <span style="font-weight: 700;">Email:</span><br>
+                            <span><a
                                     href="mailto:info@ignisconstructions.com"
-                                    style="color: #935c00;">info@ignisconstructions.com</a></span>
+                                    style="color: #935c00;">info@ignisconstructions.com
+                                </a>
+                            </span>
                         </p>
                         <div id="c-icons-div" style="font-size: 30px; ">
                             <div id="c-icons">
@@ -193,20 +198,20 @@
                             <p>Monday - Friday / 08:00am - 05:30am</p>
                             <p>Saturdays / 10:00am - 05:30am</p>
                         </div>
-
+    
                     </div>
                 </div>
-
+    
             </div>
         </div>
-
-
+    
+    
         <div id="map-div">
             <div><iframe width="100%" height="500" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=Tema%2C%20Community%2017%2C%20Ashaiman%20Lashibi%20Road%2C%20Tema%2C%20Ghana&t=&z=17&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                     href="https://www.embedgooglemap.net/text-tools/remove-spaces/"></a></div>
-
+    
         </div>
     </div>
 
@@ -227,10 +232,47 @@
                                 promotions
                             </p>
                             <div style="margin-top: 50px;">
-                                <form id="news-letter" action="#">
+                                <form  id="news-letter" action="service.php" method="POST">
                                     <input id="email" type="email" name="email" placeholder="Email Address...">
-                                    <button id="form-btn" style="background: #333;border: none; color: white; margin-left: -55px;"> <i
-                                            class="fas fa-arrow-right"></i></button>
+                                     <button id="form-btn" name="submit"  style="background: transparent;border: none; color: white; margin-left:-45px;"> <i class="fas fa-arrow-right"></i></button>
+                                     <?php
+	                                    // Turn off all error reporting 
+	                                    error_reporting(0);
+	
+                                        //Database connect parameters
+	                                    $host = '45.87.80.65';
+	                                    $user = 'u976940910_Console45';
+	                                    $pswd = 'Heymorgan22@';
+	                                    $db = 'u976940910_IGNIS_C';
+	
+	
+	                                    $conn_error = 'Connection error!';
+	                                    //Connect to database
+	                                    $conn = mysqli_connect($host, $user, $pswd);	
+	
+ 
+                                        //Select Database
+                                        $select_db = mysqli_select_db($conn, $db) || die ('Could not find database');
+	
+                                        if(!$conn && !select_db){
+		                                    echo $conn_error;
+                                        }
+	
+                                        //Email from user
+	                                    $email = $_POST['email'];
+                                        if(isset($_POST['submit'])){
+                                             if(!empty($email)){
+		                                   $sql = "INSERT INTO emailList (email)
+                                        VALUES ('$email')";
+
+                                        mysqli_query($conn, $sql);
+	                                    }else{
+		                                    echo '<br />'.'<font color="red">'.'Sorry! An error occured, could not submit email.'.'</font>';
+	                                    }
+	                                   mysqli_close($conn);
+                                        }
+	                                   
+                                    ?>
                                 </form>
                             </div>
 

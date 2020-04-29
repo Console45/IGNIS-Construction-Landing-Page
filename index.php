@@ -7,8 +7,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>IGNIS CONSTRUCTION AND ENGINEERING</title>
-        <meta name="description" content="">
+        <meta name="description" content="IGNIS Engineering and Constructions. >Provision of Affordable Construction & Engineering
+                            Solutions to Everyone">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/ico" href="images/logo.png" />
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -33,7 +35,7 @@
                 <div class="row " >
                     <div class="col-md-12" >
                         <nav  class="navbar navbar-light navbar-expand-lg  mx-lg-5  py-lg-0" >
-                            <a   class="navbar-brand mx-lg-4 pt-lg-1 cssanimation fadeInLeft" href="./index.html">
+                            <a   class="navbar-brand mx-lg-4 pt-lg-1 cssanimation fadeInLeft" href="./index.php">
                                 <img src="./images/logo.png" style="width: 150px; margin-top: -20px;" alt=""> </a>
                             <button style="margin-top: -20px;" class="navbar-toggler cssanimation fadeInRight" type="button" data-toggle="collapse" data-target="#navbar"
                                 aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
@@ -158,7 +160,7 @@
                     </div>
                     <div  class="d-none d-lg-block" style="margin-top: 250px;">
                         <h3 style="margin-bottom: 30px; font-weight: 900;">See All of <br> Our Service</h3>
-                        <a id="readmore" href="./service.html">Here <i id="read-i" class="fas fa-arrow-right"></i></a>
+                        <a id="readmore" href="./service.php">Here <i id="read-i" class="fas fa-arrow-right"></i></a>
                     </div>
             
                 </div>
@@ -171,7 +173,7 @@
                 </div>
                 <div id="service-p" class="d-block d-lg-none">
                     <h3 style="margin-bottom: 30px; font-weight: 900;">See All of <br> Our Service</h3>
-                    <a id="readmore" href="./service.html">Here <i id="read-i" class="fas fa-arrow-right"></i></a>
+                    <a id="readmore" href="./service.php">Here <i id="read-i" class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -222,24 +224,24 @@
 
             <div class="container" style="margin-top: 70px;">
                 <div class="row">   
-                    <div class="col-6 col-md-4">
-                        <div style="display: flex; justify-content: center;">
+                    <div class="col-6 col-md-4  ml-lg-0">
+                        <div class="ml-2 ml-lg-0" style="display: flex; justify-content: center;">
                             <div>
                                 <div id="ico-bg">
                                     <img  src="./images/monument.svg" alt="">
                                 </div>
                             
                             </div>
-                            <div id="clients-cap-1" class="text-center " >
+                            <div id="clients-cap-1" class="text-center" >
                                 <h4 style="margin-top: 40px;">Governments</h4>
-                                <p style="font-size: 13px;">We provide construction <br> services for Governments <br> all over
-                                    Africa</p>
+                                <p style="font-size: 13px;">We provide construction<br>services for the Government
+                                    </p>
                             </div>
                         </div>
                           
                     </div>
                     <div class="col-6 col-md-4">
-                        <div style="display: flex; justify-content: center;">
+                        <div class="ml-3 ml-lg-0" style="display: flex; justify-content: center;">
                             <div>
                                 <div id="ico-bg">
                                     <img  src="./images/businessman.svg" alt="">
@@ -248,7 +250,7 @@
                             </div>
                             <div id="clients-cap-2" class="text-center " >
                                 <h4 style="margin-top: 40px;">Civil Servants</h4>
-                                <p style="font-size: 13px;">We provide construction <br> services for <br> Civil Servants</p>
+                                <p style="font-size: 13px;">We provide construction <br> services for Civil Servants</p>
                             </div>
                         </div>
                     </div>
@@ -263,8 +265,7 @@
                         </div>
                         <div id="clients-cap-3" class="text-center ">
                             <h4 style="margin-top: 40px;">Corporate Bodies</h4>
-                            <p style="font-size: 13px;">We provide construction <br> services for Corporate <br> Bodies and
-                                Businesses</p>
+                            <p style="font-size: 13px;">We provide construction <br> services for Corporations </p>
                         </div>
 
                       </div>
@@ -275,7 +276,7 @@
             <div class="row mt-5">
                 <div class="col-6 col-md-4">
                     <div style="display: flex; justify-content: center;">
-                        <div>
+                        <div  class="ml-2 ml-lg-0">
                             <div id="ico-bg">
                                 <img  src="./images/person.svg" alt="">
                             </div>
@@ -283,8 +284,8 @@
                         </div>
                         <div id="clients-cap-4" class="text-center ">
                             <h4 style="margin-top: 40px;">Individuals</h4>
-                            <p style="font-size: 13px;">We provide construction  <br> services for Individuals <br> Build with
-                                Us!</p>
+                            <p style="font-size: 13px;">We provide construction  <br> services for Individuals  
+                                </p>
                         </div>
 
                     </div>
@@ -292,7 +293,7 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <div style="display: flex; justify-content: center;">
-                        <div>
+                        <div  class="ml-3 ml-lg-0">
                             <div id="ico-bg">
                                 <img  src="./images/church.svg" alt="">
                             </div>
@@ -300,7 +301,7 @@
                         </div>
                         <div id="clients-cap-5" class="text-center ">
                             <h4 style="margin-top: 40px; ">Churches</h4>
-                            <p style="font-size: 13px;">We provide construction <br> services for Churches <br> And Other religious bodies
+                            <p style="font-size: 13px;">We provide construction  <br> services for All Churches 
                                 </p>
                         </div>
                     </div>
@@ -316,7 +317,7 @@
                     </div>
                     <div  id="clients-cap-6" class="text-center " >
                         <h4 style="margin-top: 40px;">Schools</h4>
-                        <p style="font-size: 13px;">We provide construction <br> services for Schools<br> At various levels of Education
+                        <p style="font-size: 13px;">We provide construction <br> services for All Schools
                             
                         </p>
                     </div>
@@ -407,9 +408,47 @@
                             </p>
                             <div style="margin-top: 50px;">
                             
-                                <form  id="news-letter" action="#">
+                                <form  id="news-letter" action="index.php" method="POST">
                                     <input id="email" type="email" name="email" placeholder="Email Address...">
-                                     <button id="form-btn" style="background: #333;border: none; color: white; margin-left: -55px;"> <i class="fas fa-arrow-right"></i></button>
+                                     <button id="form-btn" name="submit"  style="background: transparent;border: none; color: white; margin-left:-45px;"> <i class="fas fa-arrow-right"></i></button>
+                                     <?php
+	                                    // Turn off all error reporting 
+	                                    error_reporting(0);
+	
+                                        //Database connect parameters
+	                                    $host = '45.87.80.65';
+	                                    $user = 'u976940910_Console45';
+	                                    $pswd = 'Heymorgan22@';
+	                                    $db = 'u976940910_IGNIS_C';
+	
+	
+	                                    $conn_error = 'Connection error!';
+	                                    //Connect to database
+	                                    $conn = mysqli_connect($host, $user, $pswd);	
+	
+ 
+                                        //Select Database
+                                        $select_db = mysqli_select_db($conn, $db) || die ('Could not find database');
+	
+                                        if(!$conn && !select_db){
+		                                    echo $conn_error;
+                                        }
+	
+                                        //Email from user
+	                                    $email = $_POST['email'];
+                                                                  
+	                                     if(isset($_POST['submit'])){
+                                             if(!empty($email)){
+		                                   $sql = "INSERT INTO emailList (email)
+                                        VALUES ('$email')";
+
+                                        mysqli_query($conn, $sql);
+	                                    }else{
+		                                    echo '<br />'.'<font color="red">'.'Sorry! An error occured, could not submit email.'.'</font>';
+	                                    }
+	                                   mysqli_close($conn);
+                                        }
+                                    ?>
                                 </form>
                             </div>
 
