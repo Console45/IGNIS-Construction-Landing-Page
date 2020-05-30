@@ -25,6 +25,9 @@ h2 {
 	padding: 1rem 0;
 	transition: all 0.3s ease;
 }
+#toggler {
+	border: none;
+}
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
 	background-color: #fff;
@@ -146,6 +149,7 @@ header {
 }
 #ab-img-div img {
 	width: 600px;
+	margin-top: 20px;
 }
 #about-h3::after {
 	content: "";
@@ -168,12 +172,14 @@ header {
 }
 @media screen and (max-width: 1100px) {
 	#ab-img-div img {
-		width: 500px;
+		width: 480px;
+		margin-top: 40px;
 	}
 }
 @media screen and (max-width: 992px) {
 	#ab-img-div img {
-		width: 500px;
+		width: 480px;
+		margin-top: 20px;
 	}
 	#ab-img-div {
 		display: flex;
